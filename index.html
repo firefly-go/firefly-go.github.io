@@ -1,36 +1,1323 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
-    <title>萤火虫的春天</title>
-  </head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+     
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    
+<head>   
+   
 
-  <body>
+    <script type="text/javascript" src="http://c.csdnimg.cn/pubfooter/js/tracking.js" charset="utf-8"></script>  
 
-    <header>
-      <div>
-        <h1>隆吊吊的春天</h1>
-        <h2></h2>
+    <script type="text/javascript">
+        var protocol = window.location.protocol;
+        document.write('<script type="text/javascript" src="' + protocol + '//csdnimg.cn/pubfooter/js/repoAddr2.js?v=' + Math.random() + '"></' + 'script>');
+    </script>
+
   
-      </div>
-    </header>
+ <meta http-equiv="Cache-Control" content="no-siteapp" /><link rel="alternate" media="handheld" href="#" />
 
-    <div class="container">
-      <section id="main_content">
-        <h3>
-<a id="清风半夜鸣蝉" class="anchor" href="#%E6%B8%85%E9%A3%8E%E5%8D%8A%E5%A4%9C%E9%B8%A3%E8%9D%89" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>清风半夜鸣蝉</h3>
+    <title>hexo在github上搭建个人博客详细步骤 - 喜欢雨天的我
+        - 博客频道 - CSDN.NET</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="COWBOY是erlang的一个成功的开源库，学习的人也很多，本人学习erlang，就拿此库过来练练手。&#160;COWBOY库也可以称之为COWBOY app，其启动依赖于cowlib，ranch，cryto这3个app，此3个app中对于ranch app也有过研究，之前也写过其分析文章，这里不再过多描述。&#160;先看看COWBOY app的进程树情况上面的图没有处理好，见谅！&#160;" />
+    <script src="http://static.blog.csdn.net/scripts/jquery.js" type="text/javascript"></script>
+      <script type="text/javascript" src="http://static.blog.csdn.net/scripts/jquery-version.js"></script>
+    <script type="text/javascript" src="http://static.blog.csdn.net/scripts/ad.js?v=1.1"></script>
+        <!--new top-->
+       
+        <link rel="stylesheet" href="http://c.csdnimg.cn/public/common/toolbar/css/index.css">
+        <!--new top-->
+    
+      <!-- ad begin -->
+         <script language="javascript" type="text/javascript" src="http://ads.csdn.net/js/tracking.js"></script>
+    <!-- ad end-->
 
-<h3>
-<a id="处处闻啼鸟" class="anchor" href="#%E5%A4%84%E5%A4%84%E9%97%BB%E5%95%BC%E9%B8%9F" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>处处闻啼鸟</h3>
-      </section>
-    </div>
+    <link rel="Stylesheet" type="text/css" href="http://static.blog.csdn.net/skin/skin-yellow/css/style.css?v=1.1" />
+    <link id="RSSLink" title="RSS" type="application/rss+xml" rel="alternate" href="/qq_15807167/rss/list" />
+    <link rel="shortcut icon" href="http://c.csdnimg.cn/public/favicon.ico" />
+    <link type="text/css" rel="stylesheet" href="http://static.blog.csdn.net/scripts/SyntaxHighlighter/styles/blue_black.css" />
+ 
+
+
+</head>
+<body>
+    <!-- 广告位开始 -->
+        <ins data-revive-zoneid="149" data-revive-id="8c38e720de1c90a6f6ff52f3f89c4d57"></ins>
+    <!-- 广告位结束 -->
 
     
-  </body>
-</html>
+   
+      <!--new top-->
+    <script id="toolbar-tpl-scriptId" fixed="true" prod="blog" skin="black" src="http://c.csdnimg.cn/public/common/toolbar/js/html.js" type="text/javascript"></script>
+     <!--new top-->
+    <div id="container">
+        <div id="header">
+    <div class="header">
+        <div id="blog_title">
+            <h2>
+                <a href="http://blog.csdn.net/qq_15807167">喜欢雨天的我</a></h2>
+            <h3>天上之水，下凡间。</h3>
+            <div class="clear">
+            </div>
+        </div>
+        <div class="clear">
+        </div>
+        
+     
+    </div>
+</div>
+<div id="navigator">
+    <div class="navigator_bg">
+    </div>
+    <div class="navigator">
+        <ul>
+            
+                <li id="btnContents"><a href="http://blog.csdn.net/qq_15807167?viewmode=contents"><span onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_mulu'])">
+                    <img src="http://static.blog.csdn.net/images/ico_list.gif">目录视图</span></a></li>
+                <li id="btnView"><a href="http://blog.csdn.net/qq_15807167?viewmode=list"><span onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_zhaiyao'])">
+                    <img src="http://static.blog.csdn.net/images/ico_summary.gif">摘要视图</span></a></li>
+                <li id="btnRss"><a href="http://blog.csdn.net/qq_15807167/rss/list"><span onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_RSS'])">
+                    <img src="http://static.blog.csdn.net/images/ico_rss.gif">订阅</span></a></li>                
+            
+
+            </ul>
+    </div>
+</div>
+<script type="text/javascript">
+    var username = "qq_15807167";
+    var _blogger = username;
+    var blog_address = "http://blog.csdn.net/qq_15807167";
+    var static_host = "http://static.blog.csdn.net";
+    var currentUserName = "";  
+</script>
+
+        <div id="body">
+            <div id="main">
+                <div class="main">
+                        <div class="ad_class">
+<div class="notice tracking-ad" data-mod='popu_3' > 
+
+
+<a href="http://blog.csdn.net/blogdevteam/article/details/51919935">
+<font color=blue>【公告】博客系统优化升级</font></a>
+&nbsp;&nbsp;&nbsp;
+<a href="http://lib.csdn.net/assemble">
+<font color=red>【Lib Vote】来来来，表个态
+</font></a>
+&nbsp;&nbsp;&nbsp;
+
+
+<a href="http://geek.csdn.net/news/detail/97799">
+<font color=blue>主流编程语言图谱之二
+</font></a>
+&nbsp;&nbsp;&nbsp;
+
+</font></a>
+</div>                        </div>
+                        
+
+
+
+<!-- 广告位开始 -->
+<ins data-revive-zoneid="72" data-revive-id="8c38e720de1c90a6f6ff52f3f89c4d57"></ins>
+<!-- 广告位结束 -->
+
+  
+<link href="http://static.blog.csdn.net/css/comment1.css" type="text/css" rel="stylesheet" />
+<link href="http://static.blog.csdn.net/css/style1.css" type="text/css" rel="stylesheet" />
+<script language='JavaScript' type='text/javascript' src='http://download.csdn.net/js/jquery.cookie.js'></script>
+<script type="text/javascript" src="http://c.csdnimg.cn/rabbit/search-service/main.js"></script>
+<link rel="stylesheet" href="http://static.blog.csdn.net/public/res-min/markdown_views.css?v=1.0" />
+<link rel="stylesheet" href="http://static.blog.csdn.net/css/category.css?v=1.0" />
+<script type="text/javascript" src="http://static.blog.csdn.net/public/res/bower-libs/MathJax/MathJax.js?config=TeX-AMS_HTML"></script>
+<script type="text/javascript" src="http://static.blog.csdn.net/scripts/web-storage-cache.min.js"></script>
+<script type="text/javascript" src="http://static.blog.csdn.net/scripts/replace.min.js"></script>
+
+
+
+
+  <script type="text/ecmascript">
+      window.quickReplyflag = true;
+           
+            var isBole = false;
+            
+          
+    </script>
+<div id="article_details" class="details">
+    <div class="article_title">   
+         <span class="ico ico_type_Original"></span>
+
+
+    <h1>
+        <span class="link_title"><a href="/qq_15807167/article/details/51601234">
+        <font color="red">[置顶]</font>
+        hexo在github上搭建个人博客详细步骤            
+        </a></span>
+    </h1>
+</div>
+
+   
+
+        <div class="article_manage clearfix">
+        <div class="article_l">
+            <span class="link_categories">
+            标签：
+              <a href='http://www.csdn.net/tag/%e6%90%ad%e5%bb%ba%e6%89%98%e7%ae%a1%e6%9c%8d%e5%8a%a1%e5%99%a8' target=_blank onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_tag']);">搭建托管服务器</a>
+            </span>
+        </div>
+        <div class="article_r">
+            <span class="link_postdate">2016-06-07 08:48</span>
+            <span class="link_view" title="阅读次数">5281人阅读</span>
+            <span class="link_comments" title="评论次数"> <a href="#comments" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_pinglun'])">评论</a>(2)</span>
+            <span class="link_collect tracking-ad" data-mod="popu_171"> <a href="javascript:void(0);" onclick="javascript:collectArticle('hexo在github上搭建个人博客详细步骤','51601234');return false;" title="收藏">收藏</a></span>
+             <span class="link_report"> <a href="#report" onclick="javascript:report(51601234,2);return false;" title="举报">举报</a></span>
+
+        </div>
+    </div>
+    <div class="embody"  style="display:none" id="embody">
+        <span class="embody_t">本文章已收录于：</span>
+        <div class="embody_c" id="lib" value="{&quot;err&quot;:0,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:[]}"></div>
+    </div>
+    <style type="text/css">        
+            .embody{
+                padding:10px 10px 10px;
+                margin:0 -20px;
+                border-bottom:solid 1px #ededed;                
+            }
+            .embody_b{
+                margin:0 ;
+                padding:10px 0;
+            }
+            .embody .embody_t,.embody .embody_c{
+                display: inline-block;
+                margin-right:10px;
+            }
+            .embody_t{
+                font-size: 12px;
+                color:#999;
+            }
+            .embody_c{
+                font-size: 12px;
+            }
+            .embody_c img,.embody_c em{
+                display: inline-block;
+                vertical-align: middle;               
+            }
+             .embody_c img{               
+                width:30px;
+                height:30px;
+            }
+            .embody_c em{
+                margin: 0 20px 0 10px;
+                color:#333;
+                font-style: normal;
+            }
+    </style>
+    <script  type="text/javascript">
+        $(function () {
+            try
+            {
+                var lib = eval("("+$("#lib").attr("value")+")");
+                var html = "";
+                if (lib.err == 0) {
+                    $.each(lib.data, function (i) {
+                        var obj = lib.data[i];
+                        //html += '<img src="' + obj.logo + '"/>' + obj.name + "&nbsp;&nbsp;";
+                        html += ' <a href="' + obj.url + '" target="_blank">';
+                        html += ' <img src="' + obj.logo + '">';
+                        html += ' <em><b>' + obj.name + '</b></em>';
+                        html += ' </a>';
+                    });
+                    if (html != "") {
+                        setTimeout(function () {
+                            $("#lib").html(html);                      
+                            $("#embody").show();
+                        }, 100);
+                    }
+                }      
+            } catch (err)
+            { }
+            
+        });
+    </script>
+      <div class="category clearfix">
+        <div class="category_l">
+           <img src="http://static.blog.csdn.net/images/category_icon.jpg">
+            <span>分类：</span>
+        </div>
+        <div class="category_r">
+                    <label>
+                        <span onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_fenlei']);">|-hexo上搭建博客<em></em></span>                       
+                    </label>      
+        </div>
+    </div>
+    <script   type="text/javascript" src="http://static.blog.csdn.net/scripts/category.js"></script>  
+        <div   class="bog_copyright">         
+            <p  class="copyright_p" >版权声明：本文为博主原创文章，未经博主允许不得转载。</p>
+        </div>
+
+  
+
+  
+  
+     
+
+<div id="article_content" class="article_content">
+        <div class="markdown_views"><h2 id="hexo搭建个人博客详细步骤">hexo搭建个人博客详细步骤</h2>
+
+<p>本片博文讲详细讲解搭建过程，经历鉴于我搭建托管博客所遇到的错误！为了避免读者重蹈覆辙。我将尽量详细，和一些遇到的错误与大家分享。</p>
+
+<hr>
+
+
+
+<h1 id="第一步">第一步</h1>
+
+<p>1 首先我们先去准备［github］(<a href="https://github.com/">https://github.com/</a>)    ,（点击文字进行跳转）。</p>
+
+<p>2 首先在主界面注册github进行！按照步骤进行注册。</p>
+
+<p>3 注册成功先不要急！此时我们还需要验证邮箱地址。 <br>
+<img src="http://i1.buimg.com/092d3703121c7dacs.png" alt="邮箱验证" title=""> <br>
+4 接下来我们需要建立一个仓库 <br>
+<img src="http://i1.buimg.com/87c9c6e060838b0bs.png" alt="" title=""> <br>
+记住建立仓库时所填写的内容！是你的帐号.github.io  （这是因为github规定的格式这样才会直接讲当前仓库作为托管站点） <br>
+<img src="http://i1.buimg.com/ec9d69df94dfe5f5s.jpg" alt="" title=""> <br>
+5  到这里，你现在就成功了百分之25了！加油  是不是很容易。别着急  接下来就需要细心和仔细了，因为hexo对格式要求很严格（我在格式上错误了很多次，当时都有放弃的念头了，所以希望大家遇到困难别气馁，人家都能搞出来！我们为何不行呢）。</p>
+
+<hr>
+
+
+
+<h1 id="git下载和配置">git下载和配置</h1>
+
+<ul>
+<li>需要先下载git插件，并进行配置<a href="https://git-scm.com/download">git官网</a></li>
+<li>接下来就是git配置内容，这里推荐一片配置git下载安装和配置的博文<a href="http://blog.csdn.net/renfufei/article/details/41647875">git下载配置博文</a></li>
+</ul>
+
+<hr>
+
+
+
+<h1 id="hexo配置篇">hexo配置篇</h1>
+
+<p>1  再次提醒读者朋友 一定要注意格式，我会在必要的地方提示。</p>
+
+<p>2  首先大家需要在如下地址下载最新版hexo。<a href="http://nodejs.cn/">node.js</a>（尽量下载最新版本！博文发出时间为16年6月！当前链接只是这段时间最新版）。 <br>
+3  大家下载好！可以开始安装了（如果你和我一样是处女座不想安装到期C盘，那么请一路next）</p>
+
+<p>4 鼠标右键任意地方，选择Git Bash  <br>
+<img src="http://i1.buimg.com/add33098c0aa3f29t.jpg" alt="" title=""> <br>
+使用以下命令安装hexo(ps：以下命令中的<code>$</code>符号只为了让教程和实际看起来一致，实际输入命令只需输入<code>$</code>后面的命令即可)  <br>
+<code>$ npm install hexo-cli -g</code> <br>
+如果之后在使用的过程中，遇到以下的错误 <br>
+<code>ERROR Deployer not found : github</code> <br>
+则运行以下命令,或者你直接先运行这个命令更好。</p>
+
+
+
+<pre class="prettyprint"><code class="language-~D npm install hexo-deployer-git --save hljs ruby">
+<span class="hljs-variable">$ </span>hexo g
+
+<span class="hljs-variable">$ </span>hexo d</code></pre>
+
+<p>接下来创建放置博客文件的文件夹：hexo文件夹。在自己想要的位置创建文件夹，如我hexo文件夹的位置为E:\hexo，名字和地方可以自由选择，当然最好不要放在中文路径下，至于原因，我想很多人懂得。之后进入文件夹，即E:\hexo内，点击鼠标右键，选择Git Bash，执行以下命令，Hexo会自动在该文件夹下下载搭建网站所需的所有文件。 <br>
+<code>$ hexo init</code> <br>
+     安装依赖包 <br>
+      <code>$ npm install</code> <br>
+让我们看看刚刚下载的hexo文件带来了什么，在E:\hexo内执行以下命令， <br>
+<code>$ hexo g</code></p>
+
+<p><code>$ hexo s</code></p>
+
+<p>然后用浏览器访问<a href="http://localhost:4000/">http://localhost:4000/</a>，此时，你应该看到了一个漂亮的博客了，当然这个博客只是在本地的，别人是看不到的，hexo3.0使用的默认主题是landscape。轻轻松松就看到了一点成果，是不是很激动，这就是hexo的强大之处，这个本地预览的功能，我真是爱不释手</p>
+
+<hr>
+
+
+
+<h1 id="部署本地文件到github">部署本地文件到github</h1>
+
+<p>既然Repository已经创建了，当然是先把博客放到Github上去看看效果。编辑E：\hexo下的_config.yml文件，建议使用Notepad++。</p>
+
+<p>在_config.yml最下方，添加如下配置(命令中的第一个huangjunhui为Github的用户名,第二个huangjunhui为之前New的Repository的名字,记得改成自己的。另外记得一点，hexo的配置文件中任何’:’后面都是带一个空格的),如果配置以下命令出现ERROR Deployer not found : github，则参考上文的解决方法。</p>
+
+<p><img src="http://i1.buimg.com/2b0b56ff987e6c8cs.png" alt="" title=""></p>
+
+<p>这里要注意格式了（注意间隔，按照图片上的来，：后面有内容一定要加个空格） <br>
+配置好_config.yml并保存后，执行以下命令部署到Github上。如果你是第一次使用Github或者是已经使用过，但没有配置过SSH，则可能需要配置一下，具体方法史上最全github使用方法：github入门到精通里面有介绍到。</p>
+
+
+
+<pre class="prettyprint"><code class=" hljs ruby">
+<span class="hljs-variable">$ </span>hexo g
+<span class="hljs-variable">$ </span>hexo d
+</code></pre>
+
+<p>执行上面的第二个命令，可能会要你输入用户名和密码，皆为注册Github时的数据，输入密码是不显示任何东西的，输入完毕回车即可。</p>
+
+<p>此时，我们的博客已经搭建起来，并发布到Github上了，在浏览器访问huangjunhui.github.io就能看到自己的博客了。第一次访问刚地址，可能访问不了，您可以在几分钟后进行访问，一般不超过10分钟。</p>
+
+<hr>
+
+
+
+<h1 id="hexo的配置文件">hexo的配置文件</h1>
+
+<p>hexo里面有两个常用到的配置文件，分别是整个博客的配置文件<code>E:\hexo\_config.yml</code> <br>
+和主题的配置文件<code>E:\hexo\themes\light\_config.yml</code>，此地址是对于我来说，hexo3.0使用的默认主题是landscape，因此你们的地址应该是<code>E:\hexo\themes\landscape\_config.yml</code>，下文所有讲到light的地方，你们将之换为自己的主题名即可。本博客使用的主题是基于light改善的主题，目前还在完善中，如果完成的比较好，以后可能发布在github上。如果你想自己挑选喜欢的主题，hexo官方提供了12个主题供你自己选择，使用方法很简单，点击自己想要的主题，进入该主题的Repository，使用Git将主题clone到本地，然后将整个文件夹复制到E:\hexo\themes文件夹下，将<code>E"\hexo\_config.yml</code>里的theme名字改为自己下载的主题的文件夹名即可。</p>
+
+<p>接下来介绍整个博客的配置文件。</p>
+
+<p>E:\hexo_config.yml</p>
+
+
+
+<pre class="prettyprint"><code class="language-# Hexo Configuration hljs avrasm">
+<span class="hljs-preprocessor">## Docs: https://hexo.io/docs/configuration.html</span>
+
+<span class="hljs-preprocessor">## Source: https://github.com/hexojs/hexo/</span>
+
+<span class="hljs-preprocessor"># Site</span>
+
+<span class="hljs-label">title:</span> 喜欢雨天的我      //主页导航提示
+
+<span class="hljs-label">subtitle:</span>
+
+<span class="hljs-label">description:</span> 生活一半记忆，一半继续   //主页描述信息
+
+<span class="hljs-label">author:</span> Hou Shuai                //主页呈现的用户名
+
+<span class="hljs-label">language:</span> <span class="hljs-built_in">zh</span>-Hans           //根据自己主题设置语言方式
+
+<span class="hljs-label">timezone:</span>
+
+<span class="hljs-preprocessor"># URL</span>
+
+<span class="hljs-preprocessor">## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'</span>
+
+<span class="hljs-label">url:</span> http://yoursite<span class="hljs-preprocessor">.com</span>/child   
+
+<span class="hljs-label">root:</span> /
+
+<span class="hljs-label">permalink:</span> :year/:month/:day/:title/
+
+<span class="hljs-label">permalink_defaults:</span>
+
+<span class="hljs-preprocessor"># Directory</span>
+
+<span class="hljs-label">source_dir:</span> source
+
+<span class="hljs-label">public_dir:</span> public
+
+<span class="hljs-label">tag_dir:</span> tags
+
+<span class="hljs-label">archive_dir:</span> archives
+
+<span class="hljs-label">category_dir:</span> categories
+
+<span class="hljs-label">code_dir:</span> downloads/code
+
+<span class="hljs-label">i18n_dir:</span> :lang
+
+<span class="hljs-label">skip_render:</span>
+
+<span class="hljs-preprocessor"># Writing</span>
+
+<span class="hljs-label">new_post_name:</span> :title<span class="hljs-preprocessor">.md</span> <span class="hljs-preprocessor"># File name of new posts</span>
+
+<span class="hljs-label">default_layout:</span> post
+
+<span class="hljs-label">titlecase:</span> false <span class="hljs-preprocessor"># Transform title into titlecase</span>
+
+<span class="hljs-label">external_link:</span> true <span class="hljs-preprocessor"># Open external links in new tab</span>
+
+<span class="hljs-label">filename_case:</span> <span class="hljs-number">0</span>
+
+<span class="hljs-label">render_drafts:</span> false
+
+<span class="hljs-label">post_asset_folder:</span> false
+
+<span class="hljs-label">relative_link:</span> false
+
+<span class="hljs-label">future:</span> true
+
+<span class="hljs-label">highlight:</span>                        //高亮
+
+<span class="hljs-label">enable:</span> true
+
+<span class="hljs-label">line_number:</span> true
+
+<span class="hljs-label">auto_detect:</span> false
+
+<span class="hljs-label">tab_replace:</span>
+
+<span class="hljs-preprocessor"># Category &amp; Tag</span>
+
+<span class="hljs-label">default_category:</span> uncategorized
+
+<span class="hljs-label">category_map:</span>
+
+<span class="hljs-label">tag_map:</span>
+
+<span class="hljs-preprocessor"># Date / Time format</span>
+
+<span class="hljs-preprocessor">## Hexo uses Moment.js to parse and display date</span>
+
+<span class="hljs-preprocessor">## You can customize the date format as defined in</span>
+
+<span class="hljs-preprocessor">## http://momentjs.com/docs/#/displaying/format/</span>
+
+<span class="hljs-label">date_format:</span> YYYY-MM-DD
+
+<span class="hljs-label">time_format:</span> HH:mm:ss
+
+<span class="hljs-preprocessor"># Pagination</span>
+
+<span class="hljs-preprocessor">## Set per_page to 0 to disable pagination</span>
+
+<span class="hljs-label">per_page:</span> <span class="hljs-number">10</span>
+
+<span class="hljs-label">pagination_dir:</span> page
+
+<span class="hljs-preprocessor"># Extensions</span>
+
+<span class="hljs-preprocessor">## Plugins: https://hexo.io/plugins/</span>
+
+<span class="hljs-preprocessor">## Themes: https://hexo.io/themes/</span>
+
+<span class="hljs-label">theme:</span> yelee
+
+<span class="hljs-preprocessor"># Deployment</span>
+
+<span class="hljs-preprocessor">## Docs: https://hexo.io/docs/deployment.html</span>
+<span class="hljs-preprocessor">#下面的是重点 repository:</span>
+<span class="hljs-preprocessor">#http://github.com/你的github上用账号名/你的github上用账号</span>
+<span class="hljs-preprocessor">#名.github.io.git</span>
+
+<span class="hljs-label">deploy:</span>
+
+<span class="hljs-label">type:</span> git
+
+<span class="hljs-label">repository:</span> http://github<span class="hljs-preprocessor">.com</span>/houshuai0816/houshuai0816<span class="hljs-preprocessor">.github</span><span class="hljs-preprocessor">.io</span><span class="hljs-preprocessor">.git</span>
+
+<span class="hljs-label">branch:</span> master</code></pre>
+
+
+
+<pre class="prettyprint"><code class=" hljs avrasm">上面的是重点 repository：后面填写的格式
+<span class="hljs-label">http:</span>//github<span class="hljs-preprocessor">.com</span>/你的github上用账号名/你的github上用账号
+名<span class="hljs-preprocessor">.github</span><span class="hljs-preprocessor">.io</span><span class="hljs-preprocessor">.git</span>     
+
+<span class="hljs-preprocessor">#这里要注意repository：和你的地址之间有空格。</span>
+<span class="hljs-preprocessor">#branch: 等后面都要加空格  否则hexo配置时会报错 </span></code></pre>
+
+<p>按照自己的意愿修改完后，执行hexo g，hexo s，打开localhost:4000看看效果。</p>
+
+<p>E:\hexo\themes\light_config.yml，此处针对Concise主题，如果使用其他主题，请查看自己主题的帮助文档 <br>
+作者现在使用的样式为<a href="http://houshuai0816.github.io/">我的博客</a> <br>
+样式出处<a href="https://github.com/MOxFIVE/hexo-theme-yelee">点击跳转</a></p>
+
+
+
+<h1 id="发布新的文章">发布新的文章</h1>
+
+<p>1.在Git Bash执行命令：$ hexo new “my new post”</p>
+
+<p>2.在E:\hexo\source_post中打开my-new-post.md，打开方式使用记事本或notepad++。</p>
+
+<p>hexo中写文章使用的是Markdown，没接触过的可以看下Markdown语法说明,一分钟学会Markdown</p>
+
+
+
+<pre class="prettyprint"><code class=" hljs asciidoc"><span class="hljs-code">----
+title: my new post#可以改成中文的，如“新文章”
+date:2015-04-0822:56:29#发表日期，一般不改动
+
+categories: blog#文章文类
+
+tags: [博客，文章]#文章标签，多于一项时用这种格式，只有一项时使用tags: blog
+----</span></code></pre>
+
+<p>有一些主题中如果想要以一条题目呈现给用户需要在加如下信息（注意加的位置，是每一篇的开头）。 <br>
+<img src="http://i1.buimg.com/c3fb1abf23248817s.png" alt="" title=""></p>
+
+<p>如果想新建博文 在你存放的博客目录下 <br>
+<code>hexo n "新建博客的名字"</code> <br>
+会在 <br>
+<code>D:\Users\BokeGitHub\houshuai.github.io\blog\nodejs-hexo\source\_posts</code> （这是我的目录，你的目录实在；—/你的博客文件\source_posts） <br>
+然后用notepad+++打开编辑（这里不推荐用window商城里的MarkDownPaid进行编辑，因为会出现博客界面排版问题）</p>
+
+<hr>
+
+<p>这里是正文，用markdown写，你可以选择写一段显示在首页的简介后，加上</p>
+
+<p>在之前的内容会显示在首页，之后的内容会被隐藏，当游客点击Read more才能看到。“`</p>
+
+<p>写完文章后，你可以使用 <br>
+1.<code>$ hexo g</code>生成静态文件。 <br>
+2.<code>$ hexo s</code>在本地预览效果。 <br>
+3.<code>hexo d</code>同步到github， <br>
+然后使用http://你的用户名.github.io进行访问</p>
+
+
+
+<h1 id="自定义样式布局系列">自定义样式布局系列</h1>
+
+<p>1 如果觉得hexo自带的样式不好的话，可以在[github](<a href="https://github.com/search">https://github.com/search</a>? utf8=%E2%9C%93&amp;q=hexo)下搜索自己感兴趣的主题，需要先</p>
+
+
+
+<pre class="prettyprint"><code class="language-cd 到你存储博客的文件下的themes文件夹下 hljs php">
+git <span class="hljs-keyword">clone</span> github上对应的网址
+</code></pre>
+
+<p><img src="http://i1.buimg.com/da8c47de3e4daa5bs.png" alt="" title=""> <br>
+2 配置样式的内容同样是在样式目录下的全局配置文件中更改 <code>_config.yml</code>.根据样式提示更改 <br>
+3 对样式进行覆盖并部署到github上。需要在当前博客目录下 </p>
+
+
+
+<pre class="prettyprint"><code class=" hljs ">
+hexo clean
+
+hexo g
+
+hexo d
+</code></pre>
+
+<p>这样就可以输入自己在github上托管的网址查看效果了，是不是很简单呢。如果想和自己在万维网上的网址链接在一起，可以查看<a href="http://blog.csdn.net/lmj623565791/article/details/51319147">鸿洋_博客</a></p>
+
+<p>如果这篇博文对你有帮助的话，记得点赞加推广。：-） <br>
+<img src="http://i2.buimg.com/808975a7d4a9d9b6s.png" alt="" title=""></p></div>
+        <script  type="text/javascript">
+            $(function () {
+                $('pre.prettyprint code').each(function () {
+                    var lines = $(this).text().split('\n').length;
+                    var $numbering = $('<ul/>').addClass('pre-numbering').hide();
+                    $(this).addClass('has-numbering').parent().append($numbering);
+                    for (i = 1; i <= lines; i++) {
+                        $numbering.append($('<li/>').text(i));
+                    };
+                    $numbering.fadeIn(1700);
+                });
+            });
+        </script>
+   
+</div>
+
+
+
+
+<!-- Baidu Button BEGIN -->
+
+
+
+
+<div class="bdsharebuttonbox tracking-ad" style="float: right;" data-mod="popu_172">
+<a href="#" class="bds_more" data-cmd="more" style="background-position:0 0 !important; background-image: url(http://bdimg.share.baidu.com/static/api/img/share/icons_0_16.png?v=d754dcc0.png) !important"></a>
+<a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"  style="background-position:0 -52px !important"></a>
+<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"style="background-position:0 -104px !important"></a>
+<a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"style="background-position:0 -260px !important"></a>
+<a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"style="background-position:0 -208px !important"></a>
+<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"style="background-position:0 -1612px !important" ></a>
+</div>
+<script>window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": "", "bdMini": "1", "bdMiniList": false, "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {} }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+<!-- Baidu Button END -->
+
+   <link rel="stylesheet" href="http://static.blog.csdn.net/css/blog_detail.css" />
+
+    
+<!--172.16.140.11-->
+
+<!-- Baidu Button BEGIN -->
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=1536434" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+    document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+</script>
+<!-- Baidu Button END -->
+
+ 
+
+        <div id="digg" ArticleId="51601234" >
+            <dl id="btnDigg" class="digg digg_disable"  onclick="btndigga();">
+               
+                 <dt>顶</dt>
+                <dd>1</dd>
+            </dl>
+           
+              
+            <dl id="btnBury" class="digg digg_disable"  onclick="btnburya();">
+              
+                  <dt>踩</dt>
+                <dd>0</dd>               
+            </dl>
+            
+        </div>
+     <div class="tracking-ad" data-mod="popu_222"><a href="javascript:void(0);" >&nbsp;</a>   </div>
+    <div class="tracking-ad" data-mod="popu_223"> <a href="javascript:void(0);" >&nbsp;</a></div>
+    <script type="text/javascript">
+                function btndigga() {
+                    $(".tracking-ad[data-mod='popu_222'] a").click();
+                }
+                function btnburya() {
+                    $(".tracking-ad[data-mod='popu_223'] a").click();
+                }
+            </script>
+
+   <ul class="article_next_prev">
+                <li class="prev_article"><span  onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_shangyipian']);location.href='/qq_15807167/article/details/51586866';">上一篇</span><a href="/qq_15807167/article/details/51586866" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_shangyipian'])">Https和Http之间的区别</a></li>
+                <li class="next_article"><span onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_xiayipian']);location.href='/qq_15807167/article/details/51603394';">下一篇</span><a href="/qq_15807167/article/details/51603394" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_xiayipian'])">Butterknife使用详解</a></li>
+    </ul>
+
+    <div style="clear:both; height:10px;"></div>
+
+
+        <div class="similar_article"  style="display:none">
+                <h4>我的同类文章</h4>
+                <div class="similar_c"style="margin:20px 0px 0px 0px">
+                    <div class="similar_c_t">
+                    </div>
+                   
+                    <div class="similar_wrap tracking-ad" data-mod="popu_141"  style="max-height:195px;">
+                        <a href="http://blog.csdn.net" style="display:none">http://blog.csdn.net</a>
+                        <ul class="similar_list fl">                          
+                        </ul>
+
+                        <ul class="similar_list fr">                           
+                        </ul>
+                    </div>
+                </div>
+            </div>    
+    <script  type="text/javascript">
+        $(function () {
+            GetCategoryArticles('0', 'qq_15807167','foot','51601234');
+        });
+    </script>
+      
+</div>
+<div id="suggest"></div>
+         <script  language="javascript" type='text/javascript'>     
+             $(function(){
+                 $.get("/qq_15807167/svc/GetSuggestContent/51601234",function(data){
+                     $("#suggest").html(data);
+                 });     
+             });             
+         </script>  
+
+
+<style>
+.blog-ass-articl dd {
+color: #369;
+width: 99%; /*修改行*/
+float: left;
+overflow: hidden;
+font: normal normal 12px/23px "SimSun";
+height: 23px;
+margin: 0;
+padding: 0 0 0 10px;
+margin-right: 30px;
+background: url(http://static.blog.csdn.net/skin/default/images/blog-dot-red3.gif) no-repeat 0 10px;
+}
+</style>
+
+ <link rel="stylesheet" href="http://static.blog.csdn.net/css/replace.css"/>
+
+<div id="relate" data-mod="popu_218"  class="tracking-ad">
+        <div class="relate_t">
+            <h3><span>参考知识库</span></h3>
+        </div>
+        <div class="relate_c">
+        </div>
+</div>
+ 
+
+<dl class="blog-ass-articl" id="res-relatived" > 
+    <div class="embody embody_b" id="libkeyparent"  style="display:none">
+            <span class="embody_t">更多资料请参考：</span>
+            <div class="embody_c" id="libkey"></div>
+    </div>
+
+
+     <dt><span>猜你在找</span></dt>    
+
+
+   
+
+
+    <div id="adCollege" style="width: 42%;float: left;"> 
+        <script src="http://csdnimg.cn/jobreco/job_reco.js" type="text/javascript"></script> 
+        <script type="text/javascript">
+            csdn.position.showEdu({
+                sourceType: "blog",
+                searchType: "detail",
+                searchKey: "51601234",
+                username: "",
+                recordcount: "5",
+                containerId: "adCollege" //容器DIV的id。 
+            });
+        </script> 
+    </div>  
+
+    
+     <div id="res"  data-mod="popu_36"  class="tracking-ad" style="width: 42%;float: left;margin-right: 30px;"></div>
+   
+</dl>
+
+
+<script type="text/javascript">
+    $(function () {
+        setTimeout(function () {
+            var searchtitletags = 'hexo在github上搭建个人博客详细步骤' + ',' + $("#tags").html();
+            searchService({
+                index: 'blog',
+                query: searchtitletags,
+                from: 5,
+                size: 5,
+                appendTo: '#res',
+                url: 'recommend',
+                his: 2,
+                client: "blog_cf_enhance",
+                tmpl: '<dd style="background:url(http://static.blog.csdn.net/skin/default/images/blog-dot-red3.gif) no-repeat 0 10px;"><a href="#{ url }" title="#{ title }" strategy="#{ strategy }">#{ title }</a></dd>'
+            });
+        }, 500);
+    });    
+
+ </script>  
+
+    <div id="ad_cen">        
+<!-- 广告位开始 -->
+<ins data-revive-zoneid="71" data-revive-id="8c38e720de1c90a6f6ff52f3f89c4d57"></ins>
+<!-- 广告位结束 -->    </div>  
+
+<div class="comment_class">
+    <div id="comment_title" class="panel_head">
+        <span class="see_comment">查看评论</span><a name="comments"></a></div>
+    <div id="comment_list">
+    </div>
+    <div id="comment_bar">
+    </div>
+    <div id="comment_form">
+    </div>
+    <div class="announce">
+        * 以上用户言论只代表其个人观点，不代表CSDN网站的观点或立场<a name="reply"></a><a name="quote"></a></div>
+</div>
+
+<script type="text/javascript">
+    var fileName = '51601234';
+    var commentscount = 2;
+    var islock = false
+</script>
+<script type="text/javascript" src="http://static.blog.csdn.net/scripts/comment.js"></script>
+    <div id="ad_bot">
+    </div>
+<div id="report_dialog">
+</div>
+
+<div id="d-top"  style="bottom:60px;">
+        <a id="quick-reply" class="btn btn-top q-reply" title="快速回复" style="display:none;">
+            <img src="http://static.blog.csdn.net/images/blog-icon-reply.png" alt="快速回复">
+        </a>    
+
+    <a id="d-top-a" class="btn btn-top backtop"  style="display: none;" title="返回顶部" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_huidaodingbu'])" style="">         
+         <img src="http://static.blog.csdn.net/images/top.png" alt="TOP">
+    </a>
+</div>
+<script type="text/javascript">
+    $(function ()
+    {
+        $("#ad_frm_0").height("90px");
+        
+        setTimeout(function(){
+            $("#ad_frm_2").height("200px");
+        },1000);    
+    });
+  
+</script>
+<style type="text/css">
+    .tag_list
+    {
+        background: none repeat scroll 0 0 #FFFFFF;
+        border: 1px solid #D7CBC1;
+        color: #000000;
+        font-size: 12px;
+        line-height: 20px;
+        list-style: none outside none;
+        margin: 10px 2% 0 1%;
+        padding: 1px;
+    }
+    .tag_list h5
+    {
+        background: none repeat scroll 0 0 #E0DBD3;
+        color: #47381C;
+        font-size: 12px;
+        height: 24px;
+        line-height: 24px;
+        padding: 0 5px;
+        margin: 0;
+    }
+    .tag_list h5 a
+    {
+        color: #47381C;
+    }
+    .classify
+    {
+        margin: 10px 0;
+        padding: 4px 12px 8px;
+    }
+    .classify a
+    {
+        margin-right: 20px;
+        white-space: nowrap;
+    }
+</style>
+
+
+<div class="tag_list" style="display:none"></div>
+  <script  language="javascript" type='text/javascript'>     
+      $(function(){
+              setTimeout(function(){
+                  $.get("/qq_15807167/svc/GetTagContent",function(data){
+                      $(".tag_list").html(data).show();
+                  });     
+              });
+          },500);                       
+ </script> 
+
+
+<div id="pop_win" style="display:none ;position: absolute; z-index: 10000; border: 1px solid rgb(220, 220, 220); top: 222.5px; left: 630px; opacity: 1; background: none 0px 0px repeat scroll rgb(255, 255, 255);">
+    
+</div>
+<div id="popup_mask"></div>
+<style>
+    #popup_mask
+    {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        z-index: 9999;
+        left: 0px;
+        top: 0px;
+        opacity: 0.3;
+        filter: alpha(opacity=30);
+        display: none;
+    }
+
+</style>
+
+
+
+
+<script type="text/javascript">
+    $(function(){
+        setTimeout(function(){
+            $(".comment_body:contains('回复')").each(function(index,item){
+                var u=$(this).text().split('：')[0].toString().replace("回复","")
+                var thisComment=$(this);
+                if(u)
+                {
+                    $.getJSON("https://passport.csdn.net/get/nick?callback=?", {users: u}, function(a) {
+                        if(a!=null&&a.data!=null&&a.data.length>0)
+                        {
+                            nick=a.data[0].n; 
+                            if(u!=nick)
+                            {
+                                thisComment.text(thisComment.text().replace(u,nick));  
+                            }
+                        }       
+                    });  
+                }
+            });         
+
+        },200);  
+
+        setTimeout(function(){
+            $(".math").each(function(index,value){$(this).find("span").last().css("color","#fff"); })
+        },5000);
+
+        setTimeout(function(){
+            $(".math").each(function(index,value){$(this).find("span").last().css("color","#fff"); })
+        },10000);
+
+        setTimeout(function(){
+            $(".math").each(function(index,value){$(this).find("span").last().css("color","#fff"); })
+        },15000);
+        
+        setTimeout(function(){
+            $("a img[src='http://js.tongji.linezing.com/stats.gif']").parent().css({"position":"absolute","left":"50%"});
+        },300);
+    });
+
+    function loginbox(){
+        var $logpop=$("#pop_win");
+        $logpop.html('<iframe src="https://passport.csdn.net/account/loginbox?service=http://static.blog.csdn.net/callback.htm" frameborder="0" height="600" width="400" scrolling="no"></iframe>');
+
+        $('#popup_mask').css({
+            opacity: 0.5,
+            width: $( document ).width() + 'px',
+            height:  $( document ).height() + 'px'
+        });
+        $('#popup_mask').css("display","block");
+ 
+        $logpop.css( {
+            top: ($( window ).height() - $logpop.height())/ 2  + $( window 
+       ).scrollTop() + 'px',
+            left:($( window ).width() - $logpop.width())/ 2
+        } );
+ 
+        setTimeout( function () {
+            $logpop.show();
+            $logpop.css( {
+                opacity: 1
+            } );
+        }, 200 );
+ 
+        $('#popup_mask').unbind("click");
+        $('#popup_mask').bind("click", function(){
+            $('#popup_mask').hide();
+            var $clopop = $("#pop_win");
+            $("#common_ask_div_sc").css("display","none");
+            $clopop.css( {
+                opacity: 0
+            } );
+            setTimeout( function () {
+                $clopop.hide();
+            }, 350 );
+            return false;
+        });
+    }   
+
+</script>
+ <script language="javascript" type="text/javascript" src="http://ads.csdn.net/js/async_new.js"></script>      
+
+
+                        <div class="clear">
+                        </div>
+                    </div>                   
+                
+            </div>
+                   
+           <div id="side">
+               
+    <div class="side">
+<div id="panel_Profile" class="panel">
+<ul class="panel_head"><span>个人资料</span></ul>
+<ul class="panel_body profile">
+<div id="blog_userface">
+    <a href="http://my.csdn.net/qq_15807167" target="_blank">
+    <img src="http://avatar.csdn.net/7/3/3/1_qq_15807167.jpg" title="访问我的空间" style="max-width:90%"/>
+    </a>
+    <br />
+    <span><a href="http://my.csdn.net/qq_15807167" class="user_name" target="_blank">qq_15807167</a></span>
+</div>
+<div class="interact">
+
+    <a href="javascript:void(0);" class="attent" id="span_add_follow" title="[加关注]"></a>
+
+ <a href="javascript:void(0);" class="letter"  title="[发私信]" onclick="window.open('http://msg.csdn.net/letters/model?receiver=qq_15807167','_blank','height=350,width=700');_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_sixin'])"></a>  
+</div>
+<div id="blog_medal">
+                         <div class="ico_expert" title="CSDN博客准专家"  onclick="javascript:location='http://blog.csdn.net/experts/rule.html'" style=" cursor:pointer;width:54px;height:60px;background:url('http://c.csdnimg.cn/jifen/images/xunzhang/xunzhang/bokezhunzhuanjiamiddle.png') no-repeat" ></div>
+                <div id="bms_box">
+                                            <a  target="_blank">
+                                                    <img src="http://c.csdnimg.cn/jifen/images/xunzhang/xunzhang/zhuanlandaren.png" onmouseover="m_over_m(this,2)" onmouseout="m_out_m()" alt="2" >
+                                            </a>
+                                            <a  target="_blank">
+                                                    <img src="http://c.csdnimg.cn/jifen/images/xunzhang/xunzhang/chizhiyiheng.png" onmouseover="m_over_m(this,4)" onmouseout="m_out_m()" alt="1" >
+                                            </a>
+               </div>
+</div>
+<ul id="blog_rank">
+    <li>访问：<span>53800次</span></li>
+    <li>积分：<span>1678</span> </li>    
+    <li >等级： <span style="position:relative;display:inline-block;z-index:1" >
+            <img src="http://c.csdnimg.cn/jifen/images/xunzhang/jianzhang/blog4.png" alt="" style="vertical-align: middle;" id="leveImg">
+            <div id="smallTittle" style=" position: absolute;  left: -24px;  top: 25px;  text-align: center;  width: 101px;  height: 32px;  background-color: #fff;  line-height: 32px;  border: 2px #DDDDDD solid;  box-shadow: 0px 2px 2px rgba (0,0,0,0.1);  display: none;   z-index: 999;">
+            <div style="left: 42%;  top: -8px;  position: absolute;  width: 0;  height: 0;  border-left: 10px solid transparent;  border-right: 10px solid transparent;  border-bottom: 8px solid #EAEAEA;"></div>
+            积分：1678 </div>
+        </span>  </li>
+    <li>排名：<span>第17172名</span></li>
+</ul>
+<ul id="blog_statistics">
+    <li>原创：<span>87篇</span></li>
+    <li>转载：<span>165篇</span></li>
+    <li>译文：<span>5篇</span></li>
+    <li>评论：<span>33条</span></li>
+</ul>
+</ul>
+</div>
+
+
+<div id="panel_Category" class="panel">
+<ul class="panel_head"><span>文章分类</span></ul>
+<ul class="panel_body">    
+                 <li>
+                    <a href="/qq_15807167/article/category/6275011" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">---------Android开发知识----------</a><span>(0)</span>
+                </li>
+                 <li>
+                    <a href="/qq_15807167/article/category/6267350" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">|-Android开发相关技术</a><span>(216)</span>
+                </li>
+                 <li>
+                    <a href="/qq_15807167/article/category/6278756" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">|-Android N新特性</a><span>(2)</span>
+                </li>
+                 <li>
+                    <a href="/qq_15807167/article/category/6276412" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">|-Android6.0新特性</a><span>(12)</span>
+                </li>
+                 <li>
+                    <a href="/qq_15807167/article/category/6276413" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">|-Android5.0新特性</a><span>(17)</span>
+                </li>
+                 <li>
+                    <a href="/qq_15807167/article/category/6271628" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">|-Android第三方框架详解</a><span>(30)</span>
+                </li>
+                 <li>
+                    <a href="/qq_15807167/article/category/6265820" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">|-Android布局类型和详解</a><span>(32)</span>
+                </li>
+                 <li>
+                    <a href="/qq_15807167/article/category/6361555" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">|-Android性能优化</a><span>(1)</span>
+                </li>
+                 <li>
+                    <a href="/qq_15807167/article/category/6263395" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">|-Android及时修复-热补丁</a><span>(6)</span>
+                </li>
+                 <li>
+                    <a href="/qq_15807167/article/category/6271970" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">|-Android基础入门</a><span>(21)</span>
+                </li>
+                 <li>
+                    <a href="/qq_15807167/article/category/6276051" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">|-Android自定义布局</a><span>(19)</span>
+                </li>
+                 <li>
+                    <a href="/qq_15807167/article/category/6275008" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">|-分布式版本管理器</a><span>(5)</span>
+                </li>
+                 <li>
+                    <a href="/qq_15807167/article/category/6276595" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">|-Android编译报错解决方案</a><span>(5)</span>
+                </li>
+                 <li>
+                    <a href="/qq_15807167/article/category/6275015" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">-----------VR技术分享-------------</a><span>(5)</span>
+                </li>
+                 <li>
+                    <a href="/qq_15807167/article/category/6275037" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">|-VR技术介绍</a><span>(12)</span>
+                </li>
+                 <li>
+                    <a href="/qq_15807167/article/category/6275041" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">|-移动端VR技术开发</a><span>(9)</span>
+                </li>
+                 <li>
+                    <a href="/qq_15807167/article/category/6275043" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">|-VR技术入门</a><span>(9)</span>
+                </li>
+                 <li>
+                    <a href="/qq_15807167/article/category/6275012" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">----------HTML5开发-------------</a><span>(5)</span>
+                </li>
+                 <li>
+                    <a href="/qq_15807167/article/category/6275013" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">------------IOS开发-------------</a><span>(1)</span>
+                </li>
+                 <li>
+                    <a href="/qq_15807167/article/category/6275258" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">|-IOS抓包工具介绍</a><span>(1)</span>
+                </li>
+                 <li>
+                    <a href="/qq_15807167/article/category/6275014" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">---------Windos开发-------------</a><span>(0)</span>
+                </li>
+                 <li>
+                    <a href="/qq_15807167/article/category/6275031" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">------------其他类别--------------</a><span>(1)</span>
+                </li>
+                 <li>
+                    <a href="/qq_15807167/article/category/6262423" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">|-hexo上搭建博客</a><span>(1)</span>
+                </li>
+                 <li>
+                    <a href="/qq_15807167/article/category/6365982" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">------------游戏开发--------------</a><span>(0)</span>
+                </li>
+                 <li>
+                    <a href="/qq_15807167/article/category/6329243" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">|-Unity3D</a><span>(6)</span>
+                </li>
+                 <li>
+                    <a href="/qq_15807167/article/category/6365547" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">|-游戏原画绘制</a><span>(1)</span>
+                </li>
+                 <li>
+                    <a href="/qq_15807167/article/category/6371655" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">------------音视频编码-------------</a><span>(0)</span>
+                </li>
+                 <li>
+                    <a href="/qq_15807167/article/category/6371653" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">|-FFmpeg</a><span>(7)</span>
+                </li>
+                 <li>
+                    <a href="/qq_15807167/article/category/6379194" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">|-Shell</a><span>(1)</span>
+                </li>
+                 <li>
+                    <a href="/qq_15807167/article/category/6388571" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">|-视频流</a><span>(0)</span>
+                </li>
+</ul>
+</div><div id="panel_Category" class="panel">
+    <ul class="panel_head"><span>博客专栏</span></ul>
+    <ul class="panel_body" id="sp_column">
+    <table cellpadding="0" cellspacing="0"><tr>
+    <td style="padding:10px 10px 0 0;">
+    <a href="http://blog.csdn.net/column/details/vrorar.html" target="_blank"><img src="http://img.blog.csdn.net/20160620145758867" style="width:75px;height:75px;" /></a>
+    </td>
+    <td style="padding:10px 0; vertical-align:top;">
+    <a href="http://blog.csdn.net/column/details/vrorar.html" target="_blank">移动VR技术前瞻</a>
+    <p>文章：10篇</p>
+    <span>阅读：4374</span>
+    </td>
+    </tr></table>
+    <table cellpadding="0" cellspacing="0"><tr>
+    <td style="padding:10px 10px 0 0;">
+    <a href="http://blog.csdn.net/column/details/providerliberty.html" target="_blank"><img src="http://img.blog.csdn.net/20160619213641950" style="width:75px;height:75px;" /></a>
+    </td>
+    <td style="padding:10px 0; vertical-align:top;">
+    <a href="http://blog.csdn.net/column/details/providerliberty.html" target="_blank">Android网络框架详解</a>
+    <p>文章：7篇</p>
+    <span>阅读：4298</span>
+    </td>
+    </tr></table>
+    <table cellpadding="0" cellspacing="0"><tr>
+    <td style="padding:10px 10px 0 0;">
+    <a href="http://blog.csdn.net/column/details/customlayout.html" target="_blank"><img src="http://img.blog.csdn.net/20160619212628317" style="width:75px;height:75px;" /></a>
+    </td>
+    <td style="padding:10px 0; vertical-align:top;">
+    <a href="http://blog.csdn.net/column/details/customlayout.html" target="_blank">Android定制布局</a>
+    <p>文章：8篇</p>
+    <span>阅读：3600</span>
+    </td>
+    </tr></table>
+    </ul>
+</div>
+
+<div id="custom_column_41562377" class="panel">
+<ul class="panel_head"><span>我的链接</span></ul>
+<ul class="panel_body">
+
+<span style="font-size:14px"><a title="个人博客" href="http://houshuai0816.github.io/" target="_blank">个人博客</a>
+</span><span style="font-size:14px"><a title="GitHub" href="https://github.com/houshuai0816" target="_blank">GitHub</a></span><br>
+分享技术,美好生活,如果博文对你有帮助的话,<br>
+打赏支持一下吧.<br>
+<img src="http://img.blog.csdn.net/20160619171105940?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center"><br>
+<img src="http://img.blog.csdn.net/20160619171354519?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center"><br>
+如果需要帮助可以email我:<br>
+我将尽力帮助你解决Android方面技术问题.<br>
+Email:408619032@qq.com
+
+</ul>
+</div>
+
+<div id="custom_column_41564653" class="panel">
+<ul class="panel_head"><span>友情链接</span></ul>
+<ul class="panel_body">
+
+推荐:以下都是博客老前辈.点击传送门.<br>
+<span style="font-size:14px"><a title="张鸿洋" href="http://my.csdn.net/lmj623565791" target="_blank">张鸿洋</a>
+</span><span style="font-size:14px"><a title="guolin" href="http://my.csdn.net/sinyu890807" target="_blank">guolin</a>
+</span><span style="font-size:14px"><a title="Jake Wharton" href="https://github.com/JakeWharton" target="_blank">Jake Wharton</a><br>
+</span><span style="font-size:14px"><a title="一叶飘舟" href="http://my.csdn.net/jdsjlzx">一叶飘舟</a>
+</span><span style="font-size:14px"><a title="singwhatiwanna" href="http://my.csdn.net/singwhatiwanna" target="_blank">singwhatiwanna</a>
+</span><span style="font-size:14px"><a title="Jlfdfhl" href="http://my.csdn.net/lfdfhl" target="_blank">lfdfhl</a>
+</span>
+
+</ul>
+</div><div class="panel" id="panel_Search">
+    <ul class="panel_head"><span>文章搜索</span></ul>
+    <ul class="panel_body">
+        <form id="frmSearch" action="http://so.csdn.net/search" class="form_search" target="_blank">
+        <span><input id="inputSearch" type="text" class="blogsearch" title="请输入关键字" /></span>
+        <input id="btnSubmit" type="button" value="搜索" title="search in blog" />
+        <input type="hidden" name="q" id="inputQ" />
+        <input type="hidden" name="t" value="blog" />
+        <a id="btnSearchBlog" target="_blank"></a>
+        </form>
+    </ul>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        $("#btnSubmit").click(function () {           
+            search();
+        });
+
+        $("#frmSearch").submit(function () {
+            search();
+            return false;
+        });
+
+        function search()
+        {
+            var url = "http://so.csdn.net/so/search/s.do?q=" + encodeURIComponent($("#inputSearch").val()) + "&u=" + username + "&t=blog";
+            window.location.href = url;
+        }   
+    });
+</script>    </div>
+    <div class="clear">
+    </div>
+
+
+                 <!-- 广告位开始 --> 
+                    <ins data-revive-zoneid="189" data-revive-id="8c38e720de1c90a6f6ff52f3f89c4d57"></ins> 
+                <!-- 广告位结束 -->
+
+           </div>   
+
+            <div class="clear">
+            </div>
+        </div>
+
+        
+
+<script type="text/javascript" src="http://c.csdnimg.cn/rabbit/cnick/cnick.js"></script>
+<script type="text/javascript" src="http://static.blog.csdn.net/scripts/newblog.min.js"></script>
+
+
+<script type="text/javascript" src="http://medal.blog.csdn.net/showblogmedal.ashx?blogid=5657883"></script>
+<script type="text/javascript" src="http://static.blog.csdn.net/scripts/JavaScript1.js"></script>
+
+    <script type="text/javascript" src="http://passport.csdn.net/content/loginbox/login.js"></script>
+<script type="text/javascript">document.write("<img src=http://counter.csdn.net/pv.aspx?id=24 border=0 width=0 height=0>");</script>
+<script type="text/javascript" src="http://www.csdn.net/ui/scripts/Csdn/counter.js"></script>
+<script type="text/javascript" src="http://ad.csdn.net/scripts/ad-blog.js"></script>
+<script type="text/javascript">
+    $(function () {
+        function __get_code_toolbar(snippet_id) {
+            return $("<span class='tracking-ad' data-mod='popu_167'><a href='https://code.csdn.net/snippets/"
+                    + snippet_id
+                    + "' target='_blank' title='在CODE上查看代码片'  style='text-indent:0;'><img src='https://code.csdn.net/assets/CODE_ico.png' width=12 height=12 alt='在CODE上查看代码片' style='position:relative;top:1px;left:2px;'/></a></span>"
+                    + "<span class='tracking-ad' data-mod='popu_170'><a href='https://code.csdn.net/snippets/"
+                    + snippet_id
+                    + "/fork' target='_blank' title='派生到我的代码片' style='text-indent:0;'><img src='https://code.csdn.net/assets/ico_fork.svg' width=12 height=12 alt='派生到我的代码片' style='position:relative;top:2px;left:2px;'/></a></span>");
+        }
+        
+        $("[code_snippet_id]").each(function () {
+            __s_id = $(this).attr("code_snippet_id");
+            if (__s_id != null && __s_id != "" && __s_id != 0 && parseInt(__s_id) > 70020) {
+                __code_tool = __get_code_toolbar(__s_id);
+                $(this).prev().find(".tools").append(__code_tool);
+            }
+        });
+
+        $(".bar").show();
+    });
+</script>
+
+
+
+
+    </div>
+      <!--new top-->
+    
+    <script id="csdn-toolbar-id" btnId="header_notice_num" wrapId="note1" count="5" subCount="5" type="text/javascript" src="http://c.csdnimg.cn/public/common/toolbar/js/toolbar.js"></script>
+     <!--new top-->
+   
+    <link href="http://c.csdnimg.cn/comm_ask/css/ask_float_block.css" type="text/css" rel="stylesheet" />
+    <script language='JavaScript' type='text/javascript' src='http://c.csdnimg.cn/comm_ask/js/libs/wmd.js'></script>
+    <script language='JavaScript' type='text/javascript' src='http://c.csdnimg.cn/comm_ask/js/libs/showdown.js'></script>
+    <script language='JavaScript' type='text/javascript' src='http://c.csdnimg.cn/comm_ask/js/libs/prettify.js'></script>
+    <script language='JavaScript' type='text/javascript' src='http://c.csdnimg.cn/comm_ask/js/apps/ask_float_block.js'></script>
+   
+
+  <div id="a52b5334d" style="width: 1px; height: 1px; display: none;">
+                    <script id="adJs52b5334"></script>
+                    <script>document.getElementById("adJs52b5334").src = "http://ads.csdn.net/js/opt/52b5334.js?t=" + Math.random();</script>
+   </div>
+
+    <link rel="stylesheet" href="http://static.blog.csdn.net/css/blog_code.css" />
+    <script type="text/javascript" src="http://static.blog.csdn.net/scripts/saveToCode.js"></script>
+      <script type="text/javascript" src="//csdnimg.cn/rabbit/tracking-ad/main.js?75eacd8"></script>
+</body>
+</html>   
+ 
